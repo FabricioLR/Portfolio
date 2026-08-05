@@ -1,4 +1,4 @@
-import { FaGithubSquare, FaWordpress } from "react-icons/fa";
+import { FaGithubSquare, FaWordpress, FaQuoteRight } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
@@ -89,6 +89,15 @@ const Header = () => {
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <FaLinkedin fontSize={32} />
+          </a>
+          <a
+            href="https://citacoes.online/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Citações Online"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <FaQuoteRight fontSize={26} />
           </a>
           <a
             href="https://blog.fabriciolr.online/"
