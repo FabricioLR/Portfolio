@@ -23,6 +23,7 @@ const projects = [
   { key: "observability", image: project9Img, link: "https://github.com/FabricioLR/monitoramento", tags: ["Docker", "Prometheus", "Grafana", "Loki"] },
   { key: "chatbot", image: project10Img, link: "https://github.com/FabricioLR/chatbot_prototype", tags: ["n8n", "Groq", "RAG", "Docker"] },
   { key: "quotes", image: project11Img, link: "https://github.com/FabricioLR/Quotes", tags: ["PHP", "Laravel", "Blade", "Docker"] },
+  { key: "financial", image: project12Img, link: "https://github.com/FabricioLR/Financial", tags: ["Laravel", "n8n", "Evolution API", "PostgreSQL", "Docker"] },
 ];
 
 const Projects = () => {
