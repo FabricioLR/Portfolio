@@ -129,6 +129,10 @@ const resources = {
             title: "Chatbot AI - Protótipo",
             description: "Protótipo de assistente inteligente com RAG, integrando n8n, Groq (Llama 3.1) e embeddings da Hugging Face. Frontend servido via Nginx e orquestrado com Docker Compose.",
           },
+          quotes: {
+            title: "Citações Online",
+            description: "Site editorial minimalista (citacoes.online) que exibe uma citação do dia e um acervo navegável por categorias e autores, com busca e compartilhamento. Construído em PHP com Laravel/Blade e containerizado com Docker.",
+          },
         },
       },
       contact: {
