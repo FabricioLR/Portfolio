@@ -8,6 +8,7 @@ import project7Img from "@/assets/project7.jpg";
 import project8Img from "@/assets/project8.jpg";
 import project9Img from "@/assets/project9.jpg";
 import project10Img from "@/assets/project10.jpg";
+import project11Img from "@/assets/project11.jpg";
 import { useTranslation } from "react-i18next";
 
 const projects = [
@@ -20,6 +21,7 @@ const projects = [
   { key: "docker", image: project8Img, link: "https://github.com/FabricioLR/docker_dashboard", tags: ["PHP", "Docker", "Nginx", "Segurança"] },
   { key: "observability", image: project9Img, link: "https://github.com/FabricioLR/monitoramento", tags: ["Docker", "Prometheus", "Grafana", "Loki"] },
   { key: "chatbot", image: project10Img, link: "https://github.com/FabricioLR/chatbot_prototype", tags: ["n8n", "Groq", "RAG", "Docker"] },
+  { key: "quotes", image: project11Img, link: "https://github.com/FabricioLR/Quotes", tags: ["PHP", "Laravel", "Blade", "Docker"] },
 ];
 
 const Projects = () => {
