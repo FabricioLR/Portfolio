@@ -275,6 +275,10 @@ const resources = {
             title: "AI Chatbot - Prototype",
             description: "Intelligent assistant prototype with RAG, integrating n8n, Groq (Llama 3.1) and Hugging Face embeddings. Frontend served via Nginx and orchestrated with Docker Compose.",
           },
+          quotes: {
+            title: "Quotes Online",
+            description: "Minimalist editorial website (citacoes.online) showing a quote of the day plus a collection browsable by category and author, with search and sharing. Built with PHP using Laravel/Blade and containerized with Docker.",
+          },
         },
       },
       contact: {
