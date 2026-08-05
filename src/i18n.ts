@@ -133,6 +133,10 @@ const resources = {
             title: "Citações Online",
             description: "Site editorial minimalista (citacoes.online) que exibe uma citação do dia e um acervo navegável por categorias e autores, com busca e compartilhamento. Construído em PHP com Laravel/Blade e containerizado com Docker.",
           },
+          financial: {
+            title: "WFinancial Tracker",
+            description: "Sistema de controle financeiro automatizado: as transações são registradas apenas enviando mensagens formatadas em um grupo do WhatsApp. A Evolution API captura os eventos, o n8n valida e estrutura os dados via regex e o backend Laravel funciona como livro-caixa e dashboard, tudo orquestrado com Docker Compose e PostgreSQL.",
+          },
         },
       },
       contact: {
@@ -278,6 +282,10 @@ const resources = {
           quotes: {
             title: "Quotes Online",
             description: "Minimalist editorial website (citacoes.online) showing a quote of the day plus a collection browsable by category and author, with search and sharing. Built with PHP using Laravel/Blade and containerized with Docker.",
+          },
+          financial: {
+            title: "WFinancial Tracker",
+            description: "Automated financial ledger where transactions are recorded just by sending formatted WhatsApp messages to a group. Evolution API captures the events, n8n validates and structures the payload via regex, and a Laravel backend acts as the ledger and dashboard — all orchestrated with Docker Compose and PostgreSQL.",
           },
         },
       },
