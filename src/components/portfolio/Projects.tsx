@@ -9,6 +9,7 @@ import project8Img from "@/assets/project8.jpg";
 import project9Img from "@/assets/project9.jpg";
 import project10Img from "@/assets/project10.jpg";
 import project11Img from "@/assets/project11.jpg";
+import project12Img from "@/assets/project12.jpg";
 import { useTranslation } from "react-i18next";
 
 const projects = [
