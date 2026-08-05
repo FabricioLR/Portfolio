@@ -283,6 +283,10 @@ const resources = {
             title: "Quotes Online",
             description: "Minimalist editorial website (citacoes.online) showing a quote of the day plus a collection browsable by category and author, with search and sharing. Built with PHP using Laravel/Blade and containerized with Docker.",
           },
+          financial: {
+            title: "WFinancial Tracker",
+            description: "Automated financial ledger where transactions are recorded just by sending formatted WhatsApp messages to a group. Evolution API captures the events, n8n validates and structures the payload via regex, and a Laravel backend acts as the ledger and dashboard — all orchestrated with Docker Compose and PostgreSQL.",
+          },
         },
       },
       contact: {
