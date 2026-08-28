@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaBriefcase } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
-const expKeys = ["transoft", "ferraz"] as const;
+const expKeys = ["transoftDev", "transoft", "ferraz"] as const;
 
 const Experience = () => {
   const { t } = useTranslation();

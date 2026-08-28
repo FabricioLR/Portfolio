@@ -14,11 +14,11 @@ const resources = {
         contact: "Contato",
       },
       hero: {
-        subtitle: "Infrastructure - Back End Developer",
+        subtitle: "Software Developer",
       },
       about: {
         title: "Sobre Mim",
-        bio: "Estudante de Ciência da Computação, programador autodidata focado em desenvolvimento PHP e administrador de servidores Linux. Com experiência em infraestrutura On-Premise/Cloud, ambientes Docker e monitoramento avançado (Zabbix/Prometheus/Grafana).",
+        bio: "Estudante de Ciência da Computação e desenvolvedor de software na Transoft. Atuo com PHP, Laravel, PostgreSQL, testes, Git e Jira, mantendo também sólida experiência em infraestrutura On-Premise/Cloud, ambientes Docker e monitoramento avançado (Zabbix/Prometheus/Grafana).",
         location: "Brasília – DF",
         education: "Ciência da Computação",
         resume: "Currículo",
@@ -66,10 +66,22 @@ const resources = {
       experience: {
         title: "Experiência",
         items: {
+          transoftDev: {
+            role: "Desenvolvedor de Software",
+            company: "Transoft",
+            period: "Ago/2026 – Atual",
+            tasks: [
+              "Desenvolvimento e manutenção de aplicações web com PHP e Laravel",
+              "Modelagem e consultas em banco de dados PostgreSQL",
+              "Escrita e execução de testes automatizados",
+              "Controle de versão e colaboração em equipe com Git",
+              "Gestão de tarefas e acompanhamento de demandas com Jira",
+            ],
+          },
           transoft: {
             role: "Estagiário de Infraestrutura",
             company: "Transoft",
-            period: "Dez/2025 – Atual",
+            period: "Dez/2025 – Ago/2026",
             tasks: [
               "Atendimento a chamados internos para suporte a computadores, impressoras, rede e sistema",
               "Gerenciamento de servidores Linux (Cloud e on-premise)",
@@ -164,11 +176,11 @@ const resources = {
         contact: "Contact",
       },
       hero: {
-        subtitle: "Infrastructure - Back End Developer",
+        subtitle: "Software Developer",
       },
       about: {
         title: "About Me",
-        bio: "Computer Science student, self-taught programmer focused on PHP development and Linux server administration. Experienced with On-Premise/Cloud infrastructure, Docker environments and advanced monitoring (Zabbix/Prometheus/Grafana).",
+        bio: "Computer Science student and Software Developer at Transoft. I work with PHP, Laravel, PostgreSQL, testing, Git and Jira, while keeping solid experience in On-Premise/Cloud infrastructure, Docker environments and advanced monitoring (Zabbix/Prometheus/Grafana).",
         location: "Brasília – DF, Brazil",
         education: "Computer Science",
         resume: "Resume",
@@ -216,10 +228,22 @@ const resources = {
       experience: {
         title: "Experience",
         items: {
+          transoftDev: {
+            role: "Software Developer",
+            company: "Transoft",
+            period: "Aug/2026 – Present",
+            tasks: [
+              "Development and maintenance of web applications with PHP and Laravel",
+              "Database modeling and queries in PostgreSQL",
+              "Writing and running automated tests",
+              "Version control and team collaboration with Git",
+              "Task management and demand tracking with Jira",
+            ],
+          },
           transoft: {
             role: "Infrastructure Intern",
             company: "Transoft",
-            period: "Dec/2025 – Present",
+            period: "Dec/2025 – Aug/2026",
             tasks: [
               "Handling internal tickets for computer, printer, network and system support",
               "Linux server management (Cloud and on-premise)",
