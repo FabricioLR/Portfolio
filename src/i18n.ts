@@ -18,7 +18,7 @@ const resources = {
       },
       about: {
         title: "Sobre Mim",
-        bio: "Estudante de Ciência da Computação e desenvolvedor de software na Transoft. Atuo com PHP, Laravel, PostgreSQL, testes, Git e Jira, mantendo também sólida experiência em infraestrutura On-Premise/Cloud, ambientes Docker e monitoramento avançado (Zabbix/Prometheus/Grafana).",
+        bio: "Estudante de Ciência da Computação e desenvolvedor de software. Atuo com Stack moderna utilizando PHP, Laravel, Angular, PostgreSQL, possuindo experiência em projetos legados e mantendo também sólido conhecimento em infraestrutura On-Premise/Cloud, ambientes Docker e gerenciamento de servidores Linux.",
         location: "Brasília – DF",
         education: "Ciência da Computação",
         resume: "Currículo",
@@ -27,9 +27,9 @@ const resources = {
         title: "Habilidades",
         items: {
           backend: {
-            title: "Backend Dev",
-            subtitle: "NodeJS, Java, PHP e Python",
-            description: "Programação funcional e orientada a objetos. APIs REST, autenticação e integração com bancos de dados.",
+            title: "Desenvolvimento",
+            subtitle: "PHP, Laravel, Angular, NodeJS",
+            description: "Desenvolvimento web com PHP, Laravel e Angular. APIs REST, autenticação, integração com bancos de dados e experiência com projetos legados.",
           },
           infra: {
             title: "Infraestrutura",
@@ -180,7 +180,7 @@ const resources = {
       },
       about: {
         title: "About Me",
-        bio: "Computer Science student and Software Developer at Transoft. I work with PHP, Laravel, PostgreSQL, testing, Git and Jira, while keeping solid experience in On-Premise/Cloud infrastructure, Docker environments and advanced monitoring (Zabbix/Prometheus/Grafana).",
+        bio: "Computer Science student and software developer. I work with a modern stack using PHP, Laravel, Angular, PostgreSQL, with experience in legacy projects, while also maintaining solid knowledge in On-Premise/Cloud infrastructure, Docker environments and Linux server management.",
         location: "Brasília – DF, Brazil",
         education: "Computer Science",
         resume: "Resume",
@@ -189,9 +189,9 @@ const resources = {
         title: "Skills",
         items: {
           backend: {
-            title: "Backend Dev",
-            subtitle: "NodeJS, Java, PHP and Python",
-            description: "Functional and object-oriented programming. REST APIs, authentication and database integration.",
+            title: "Development",
+            subtitle: "PHP, Laravel, Angular, NodeJS",
+            description: "Web development with PHP, Laravel and Angular. REST APIs, authentication, database integration and experience with legacy projects.",
           },
           infra: {
             title: "Infrastructure",
