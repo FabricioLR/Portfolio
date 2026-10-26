@@ -91,15 +91,6 @@ const Header = () => {
             <FaLinkedin fontSize={32} />
           </a>
           <a
-            href="https://citacoes.online/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Citações Online"
-            className="text-muted-foreground hover:text-primary transition-colors"
-          >
-            <FaQuoteRight fontSize={26} />
-          </a>
-          <a
             href="https://blog.fabriciolr.online/"
             target="_blank"
             rel="noopener noreferrer"
