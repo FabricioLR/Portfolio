@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,61 +6,61 @@
 
 @layer base {
   :root {
-    --background: 195 25% 17%;
-    --foreground: 195 15% 90%;
+    --background: 155 20% 6%;
+    --foreground: 80 15% 94%;
 
-    --card: 195 22% 22%;
-    --card-foreground: 195 15% 90%;
+    --card: 155 16% 10%;
+    --card-foreground: 80 15% 94%;
 
-    --popover: 195 22% 22%;
-    --popover-foreground: 195 15% 90%;
+    --popover: 155 16% 10%;
+    --popover-foreground: 80 15% 94%;
 
-    --primary: 187 45% 45%;
-    --primary-foreground: 195 25% 10%;
+    --primary: 82 85% 60%;
+    --primary-foreground: 120 30% 8%;
 
-    --secondary: 195 20% 28%;
-    --secondary-foreground: 195 15% 85%;
+    --secondary: 155 14% 13%;
+    --secondary-foreground: 80 15% 94%;
 
-    --muted: 195 18% 25%;
-    --muted-foreground: 195 12% 68%;
+    --muted: 155 12% 12%;
+    --muted-foreground: 110 6% 62%;
 
-    --accent: 180 50% 50%;
-    --accent-foreground: 195 25% 10%;
+    --accent: 82 85% 60%;
+    --accent-foreground: 120 30% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 195 18% 35%;
-    --input: 195 20% 22%;
-    --ring: 187 45% 45%;
+    --border: 155 10% 21%;
+    --input: 155 10% 21%;
+    --ring: 82 85% 60%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 195 25% 14%;
+    --sidebar-background: 155 20% 5%;
     --sidebar-foreground: 195 15% 90%;
-    --sidebar-primary: 187 45% 45%;
+    --sidebar-primary: 82 85% 60%;
     --sidebar-primary-foreground: 195 25% 10%;
     --sidebar-accent: 195 20% 20%;
     --sidebar-accent-foreground: 195 15% 90%;
     --sidebar-border: 195 18% 25%;
-    --sidebar-ring: 187 45% 45%;
+    --sidebar-ring: 82 85% 60%;
 
     /* Custom portfolio tokens */
-    --gradient-hero-from: 195 30% 13%;
-    --gradient-hero-to: 195 22% 22%;
-    --gradient-section: 195 25% 18%;
-    --tech-icon: 195 20% 72%;
-    --tech-icon-hover: 187 45% 55%;
+    --gradient-hero-from: 155 22% 4%;
+    --gradient-hero-to: 155 16% 9%;
+    --gradient-section: 155 18% 8%;
+    --tech-icon: 110 6% 62%;
+    --tech-icon-hover: 82 85% 60%;
     --hero-title: 0 0% 100%;
-    --hero-subtitle: 195 10% 72%;
-    --section-title: 195 10% 72%;
-    --skill-border: 195 25% 30%;
-    --project-text-muted: 195 5% 77%;
+    --hero-subtitle: 110 6% 70%;
+    --section-title: 80 15% 94%;
+    --skill-border: 155 10% 21%;
+    --project-text-muted: 110 6% 72%;
   }
 
   .dark {
-    --background: 195 25% 17%;
-    --foreground: 195 15% 90%;
+    --background: 155 20% 6%;
+    --foreground: 80 15% 94%;
   }
 }
 
@@ -71,11 +71,11 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
   }
 }
 
