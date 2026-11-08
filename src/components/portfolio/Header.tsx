@@ -1,4 +1,4 @@
-import { FaGithubSquare, FaWordpress, FaQuoteRight, FaBriefcase } from "react-icons/fa";
+import { FaGithubSquare, FaBlog, FaQuoteRight, FaBriefcase } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
@@ -107,7 +107,7 @@ const Header = () => {
             aria-label="Blog WordPress"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <FaWordpress fontSize={32} />
+            <FaBlog fontSize={30} />
           </a>
           <button
             className="md:hidden text-muted-foreground hover:text-primary transition-colors ml-1"
