@@ -34,12 +34,13 @@ const Hero = () => {
 
       <div className="relative z-10 text-center px-4">
         <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-hero-title mb-4">
-          <ReactTyped
+          <span className="sr-only">FabricioLR</span>
+          <span aria-hidden="true"><ReactTyped
             strings={["FabricioLR"]}
             typeSpeed={120}
             showCursor={false}
             onComplete={() => setCompleted(true)}
-          />
+          /></span>
         </h1>
         {completed && (
           <motion.h2
