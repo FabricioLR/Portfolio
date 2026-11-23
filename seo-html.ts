@@ -1,4 +1,6 @@
 import type { Plugin } from "vite";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { resources } from "./src/i18n";
 import { portfolioProjects } from "./src/data/projects";
 
@@ -12,6 +14,9 @@ export function portfolioHtml(): Plugin {
   return {
     name: "portfolio-crawler-html",
     transformIndexHtml(html) {
+      // Reuse the global theme before the JavaScript-loaded stylesheet arrives.
+      const criticalTheme = readFileSync(resolve("src/index.css"), "utf8")
+        .match(/:root\s*\{[^}]+\}/)?.[0] ?? "";
       const text = resources.pt.translation;
       const section = (id: string, title: string, body: string) =>
         `<section id="${id}"><h2>${escapeHtml(title)}</h2>${body}</section>`;
@@ -31,8 +36,28 @@ export function portfolioHtml(): Plugin {
       // Hide only the static fallback in JavaScript-enabled browsers. React
       // replaces this wrapper on its first render, so no readiness timer is needed.
       // Without JavaScript the complete crawler-readable content stays visible.
-      const startup = `<script>document.documentElement.classList.add("portfolio-js");</script>
-        <style>html.portfolio-js #root > [data-portfolio-fallback] { display: none; }</style>`;
+      const startup = `<style>
+        ${criticalTheme}
+        html { background: hsl(var(--background)); color: hsl(var(--foreground)); }
+        body { margin: 0; }
+        html.portfolio-js #root > [data-portfolio-fallback] { display: none; }
+        [data-portfolio-fallback] { max-width: 64rem; margin: auto; padding: 2rem 1.5rem; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.7; overflow-wrap: anywhere; }
+        [data-portfolio-fallback] section { padding-block: 2rem; }
+        [data-portfolio-fallback] h1, [data-portfolio-fallback] h2, [data-portfolio-fallback] h3 { font-family: 'Syne', sans-serif; line-height: 1.3; }
+        [data-portfolio-fallback] h1 { font-size: 3rem; }
+        [data-portfolio-fallback] h2 { font-size: 2rem; }
+        [data-portfolio-fallback] h3 { font-size: 1.25rem; }
+        [data-portfolio-fallback] a { color: hsl(var(--primary)); }
+        [data-portfolio-fallback] article { margin-block: 2rem; }
+      </style>
+      <script>
+        document.documentElement.classList.add("portfolio-js");
+        window.addEventListener("error", function(event) {
+          if (event instanceof ErrorEvent || (event.target instanceof HTMLScriptElement && event.target.type === "module")) {
+            document.documentElement.classList.remove("portfolio-js");
+          }
+        }, true);
+      </script>`;
       return html
         .replace("</head>", `${startup}</head>`)
         .replace('<div id="root"></div>', `<div id="root"><div data-portfolio-fallback>${content}</div></div>`);
