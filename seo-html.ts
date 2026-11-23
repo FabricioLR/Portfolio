@@ -28,7 +28,14 @@ export function portfolioHtml(): Plugin {
         }).join(""))}
         ${section("contact", text.contact.title, link("mailto:fabriciolongodearaujo@gmail.com", "fabriciolongodearaujo@gmail.com") + " · " + link("https://wa.me/5561995798701", text.contact.whatsapp))}</main>
         <footer>${link("https://github.com/FabricioLR", "GitHub")} · ${link("https://www.linkedin.com/in/fabricio-arauj/", "LinkedIn")} · ${link("https://freelance.fabriciolr.online", "Freelance")} · ${link("https://blog.fabriciolr.online/", "Blog")}</footer>`;
-      return html.replace('<div id="root"></div>', `<div id="root">${content}</div>`);
+      // Hide only the static fallback in JavaScript-enabled browsers. React
+      // replaces this wrapper on its first render, so no readiness timer is needed.
+      // Without JavaScript the complete crawler-readable content stays visible.
+      const startup = `<script>document.documentElement.classList.add("portfolio-js");</script>
+        <style>html.portfolio-js #root > [data-portfolio-fallback] { display: none; }</style>`;
+      return html
+        .replace("</head>", `${startup}</head>`)
+        .replace('<div id="root"></div>', `<div id="root"><div data-portfolio-fallback>${content}</div></div>`);
     },
   };
 }
