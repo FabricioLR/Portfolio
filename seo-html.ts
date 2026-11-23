@@ -19,7 +19,7 @@ export function portfolioHtml(): Plugin {
       const paragraph = (value: string) => `<p>${escapeHtml(value)}</p>`;
       const content = `<header><nav>${Object.entries(text.nav).map(([id, label]) => link(`#${id}`, label)).join(" · ")}</nav></header>
         <main><section id="home"><h1>FabricioLR</h1>${paragraph(text.hero.subtitle)}</section>
-        ${section("about", text.about.title, paragraph(text.about.bio) + paragraph(text.about.location) + paragraph(text.about.education) + link("mailto:fabriciolongodearaujo@gmail.com", "fabriciolongodearaujo@gmail.com") + " · " + link("https://share.fabriciolr.online/ac4cd7ce-5214-428d-b053-624339b6c411", text.about.resume))}
+        ${section("about", text.about.title, paragraph(text.about.bio) + paragraph(text.about.location) + paragraph(text.about.education) + link("mailto:fabriciolongodearaujo@gmail.com", "fabriciolongodearaujo@gmail.com") + " · " + link("https://drive.google.com/file/d/1kLwT7j7ocBm7wZPRWk1Yq5zGoiScKqPH/view?usp=sharing", text.about.resume))}
         ${section("skills", text.skills.title, Object.values(text.skills.items).map((item) => `<article><h3>${escapeHtml(item.title)}</h3>${paragraph(item.subtitle)}${paragraph(item.description)}</article>`).join(""))}
         ${section("experience", text.experience.title, Object.values(text.experience.items).map((item) => `<article><h3>${escapeHtml(item.role)} — ${escapeHtml(item.company)}</h3>${paragraph(item.period)}<ul>${item.tasks.map((task) => `<li>${escapeHtml(task)}</li>`).join("")}</ul></article>`).join(""))}
         ${section("projects", text.projects.title, portfolioProjects.map((project) => {

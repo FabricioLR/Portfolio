@@ -47,12 +47,12 @@ const About = () => {
 
           <div className="mt-6">
             <a
-              href="https://share.fabriciolr.online/ac4cd7ce-5214-428d-b053-624339b6c411"
+              href="https://drive.google.com/file/d/1kLwT7j7ocBm7wZPRWk1Yq5zGoiScKqPH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-primary/50 text-primary font-medium px-4 py-2 rounded-md hover:bg-primary/10 transition-all text-sm"
               onClick={(e) => {
-                const url = "https://share.fabriciolr.online/ac4cd7ce-5214-428d-b053-624339b6c411";
+                const url = "https://drive.google.com/file/d/1kLwT7j7ocBm7wZPRWk1Yq5zGoiScKqPH/view?usp=sharing";
                 fetch(url, { method: "HEAD", mode: "no-cors" }).catch(() => {
                   e.preventDefault();
                   const link = document.createElement("a");
